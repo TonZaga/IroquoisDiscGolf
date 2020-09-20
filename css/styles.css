@@ -9,9 +9,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 1));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 1));
     background-color: skyblue;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -26,6 +29,7 @@ body {
 .logo {
   font-size: 20px;
   font-weight: bolder;
+  background-color: forestgreen;
   color: white;
   text-align: center;
   padding: 10px;
@@ -36,23 +40,15 @@ body {
   list-style-type: none;
 }
 
-.menu ul {
-  padding: 0;
-}
-
-.menu a {
-  display: block;
-  text-align: center;
+.item a {
   text-transform: uppercase;
   font-weight: bold;
   background-color: forestgreen;
   color: white;
 }
 
-.menu a:hover {
-  background-color: black;
-  color: yellow;
-  text-decoration: underline;
+.main-content {
+  flex: 1;
 }
 
 p {
@@ -70,12 +66,13 @@ img {
 
 .main-footer {
   border-top: 10px solid forestgreen;
-  position: absolute;
   width: 100%;
-  margin-bottom: -20px;
-  padding: 20px 0;
   height: 2em;
   text-align: center;
+}
+
+.col {
+  padding: 10px;
 }
 
 /* ================================= 
@@ -84,15 +81,14 @@ img {
 
 .menu {
   display: flex;
-  flex-wrap: column;
-  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu ul a {
-  display: block;
-  padding: 10px;
+.item {
+  padding: 15px;
 }
 
 
@@ -100,71 +96,60 @@ img {
   Media Queries
 ==================================== */
 
-/* Mobile phones
+/* Tablet */
 
-@media only screen and (max-width: 480px) {
-
-
-}
+@media (min-width: 769px) {
   
-
-Tablets
-
-@media only screen and (max-width: 760px) {
-
-
-}
-
-
-
-@media all and (min-width: 960px) {
+  .main-header,
+  .menu,
+  .main-content,
+  .col,
+  .directions,
+  .events {
+    display: flex;
+  }
   
-  .container {
-    width: 90%;
-    margin: 0 auto;
+  .main-header {
+    flex-direction: column;
   }
 
-  .title {
-    float: left;
-    padding: 20px;
-  }
-
-  .main-nav {
-    float: right;
-  }
-
-  .main-nav ul {
-    float: left;
+  .main-content {
+    flex-wrap: wrap;
   }
 
   .col {
-    float: left;
-    padding: 25px;
+    flex: 1 50%;
+    flex-direction: column;
   }
 
-  .secondary,
-  .tertiary {
-    width: 30%;
+  .secondary {
+    order: -1;
+  }
+
+}
+
+/* Desktop */
+
+@media (min-width: 1025px){
+
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .col {
+    flex-basis: 0;
   }
 
   .primary {
-    width: 40%;
+    flex-grow: 2;
   }
-  
-  .north,
-  .south,
-  .leagues,
-  .tournaments {
-    width: 50%;
+
+  .item a:hover {
+    background-color: black;
+    color: yellow;
+    text-decoration: underline;
   }
-    
-} */
 
-
-	/* ---- Float clearfix ---- */
-
-	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-  }
+}
