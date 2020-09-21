@@ -13,7 +13,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 1));
     background-color: skyblue;
     background-attachment: fixed;
@@ -27,7 +26,7 @@ body {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
   background-color: forestgreen;
   color: white;
@@ -38,6 +37,7 @@ body {
 .menu {
   background-color: forestgreen;
   list-style-type: none;
+  font-size: 14px;
 }
 
 .item a {
@@ -52,7 +52,7 @@ body {
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1em;
   margin-bottom: 1.5em;
 }
 
@@ -71,9 +71,35 @@ img {
   text-align: center;
 }
 
-.col {
+.col,
+.holes {
   padding: 10px;
 }
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  width: 100px;
+  background-color: forestgreen;
+  color: white;  
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
 
 /* ================================= 
   Flexbox layout
@@ -105,7 +131,8 @@ img {
   .main-content,
   .col,
   .directions,
-  .events {
+  .events,
+  .gallery {
     display: flex;
   }
   
