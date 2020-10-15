@@ -56,6 +56,10 @@ p {
   margin-bottom: 1.5em;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -92,7 +96,8 @@ button {
   font-size: 100%;
   width: 100px;
   background-color: forestgreen;
-  color: white;  
+  color: white;
+  border: 2px solid black;  
 }
 
 .buttons {
@@ -100,6 +105,10 @@ button {
   margin-top: 10px;
 }
 
+.map {
+  padding: 5px;
+  margin: 20px 0 10px 0;
+}
 
 /* ================================= 
   Flexbox layout
@@ -119,6 +128,23 @@ button {
 
 
 /* ================================= 
+  Selectors
+==================================== */
+
+input[type="text"],
+input[type="email"] {
+  background-color: silver;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  background-color: white;
+  font-weight: bold;
+  border: solid 2px;
+}
+
+
+/* ================================= 
   Media Queries
 ==================================== */
 
@@ -132,7 +158,8 @@ button {
   .col,
   .directions,
   .events,
-  .gallery {
+  .gallery,
+  .score {
     display: flex;
   }
   
@@ -153,6 +180,15 @@ button {
     order: -1;
   }
 
+  .map {
+    width: 75%;
+    align-self: center;
+  }
+
+  .newsletter {
+    width: 300px;
+    align-self: center;
+  }
 }
 
 /* Desktop */
@@ -177,6 +213,10 @@ button {
     background-color: black;
     color: yellow;
     text-decoration: underline;
+  }
+
+  .map {
+    width: 40%;
   }
 
 }

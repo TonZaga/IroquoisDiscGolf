@@ -2,7 +2,8 @@
 
 ## Description
 ```
-This is a website based on a classic disc golf course at Iroquois Park located in Louisville, KY
+This is a website based on a classic disc golf course at Iroquois Park located in Louisville, KY.
+Designed to bring the community together and grow the game of disc golf as a whole.
 
 ```
 
