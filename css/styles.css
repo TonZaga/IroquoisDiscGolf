@@ -12,20 +12,20 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 1500px;
+    margin: 0 auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 1));
-    background-color: skyblue;
+    background: silver;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .main-header {
-  border-bottom: 10px solid forestgreen;
   margin-bottom: 5px;
 }
 
-.logo {
+.title {
   font-size: 30px;
   font-weight: bolder;
   background-color: forestgreen;
@@ -52,12 +52,16 @@ body {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.25em;
   margin-bottom: 1.5em;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 a {
@@ -71,7 +75,6 @@ img {
 .main-footer {
   border-top: 10px solid forestgreen;
   width: 100%;
-  height: 2em;
   text-align: center;
 }
 
@@ -95,9 +98,12 @@ button {
   font-family: inherit;
   font-size: 100%;
   width: 100px;
+  height: 35px;
   background-color: forestgreen;
   color: white;
-  border: 2px solid black;  
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .buttons {
@@ -110,20 +116,24 @@ button {
   margin: 20px 0 10px 0;
 }
 
+.tertiary h1 {
+  text-align: center;
+}
+
 /* ================================= 
   Flexbox layout
 ==================================== */
 
 .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .item {
-  padding: 15px;
+  padding: 20px;
 }
 
 
@@ -133,13 +143,13 @@ button {
 
 input[type="text"],
 input[type="email"] {
-  background-color: silver;
+  background-color: white;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  background-color: white;
-  font-weight: bold;
+  background-color: forestgreen;
+  color: white;
   border: solid 2px;
 }
 
@@ -189,11 +199,12 @@ input[type="email"]:focus {
     width: 300px;
     align-self: center;
   }
+
 }
 
 /* Desktop */
 
-@media (min-width: 1025px){
+@media (min-width: 1025px) {
 
   .menu {
     flex-direction: row;

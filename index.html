@@ -12,7 +12,7 @@
 	<main></main>
     <header class="main-header">
 		<div class="header-container">
-			<div class="logo">Iroquois Disc Golf</div>
+			<div class="title">Iroquois Disc Golf</div>
 				<nav>
 					<div class="menu">
 						<ul class="item"><a href="index.html">Home</a></ul>
@@ -21,45 +21,44 @@
 						<ul class="item"><a href="./pages/events.html">Events</a></ul>
 					</div>
 				</nav>
+				<img class="feat-img" src="./img/Basket.jpg" alt="Disc golf basket">
+			</div>
 		</div>
 	</header>  
 
 	<div class="main-content">
-		<div class="secondary col">
-			<h2>Welcome to our website!</h2>
+		<article class="secondary col">
+			<h1>Welcome to our website!</h1>
 			<p>We are your one-stop shop for everything disc golf related that's happening at Iroquois Park Disc Golf Course in Louisville, KY.</p>
 			<p>You will find information about the course, leagues and tournaments being held in the area, directions to the course, and more!</p>
-		</div>
+		</article>
 		
-		<div class="primary col">
-			<h2>GET OUT AND THROW!</h2>
-			<img class="feat-img" src="./img/Basket.jpg" alt="Disc golf basket">
-		</div>
-		
-		<div class="tertiary col">
-			<div class="newsletter">
-				<form action="index.html" method="post">
-					<h2>Sign-up for IQDG Newsletter</h2>
+		<article class="primary col">
+			<h1>LIVE scorecard is under construction</h1>
+			<p>Soon, you'll be able to use the scoring feature that's built into the site to track your strokes for each hole and know your total score.</p>
+			<p>You will find information about the course, leagues and tournaments being held in the area, directions to the course, and more!</p>
+		</article>
 
-						<fieldset>
+		<article class="tertiary col">
+			<h1>Sign-up for IQDG Newsletter</h1>
+				<form class="newsletter" action="index.html" method="POST">
+					<fieldset>
+						<label for="name1">First Name: </label>
+						<input type="text" id="name1" name="first_name"><br><br>
+
+						<label for="name2">Last Name: </label>
+						<input type="text" id="name2" name="last_name"><br><br>
 						
-							<label for="name1">First Name: </label>
-							<input type="text" id="name1" name="first_name"><br><br>
+						<label for="mail">Email address: </label>
+						<input type="email" id="mail" name="email">
 
-							<label for="name2">Last Name: </label>
-							<input type="text" id="name2" name="last_name"><br><br>
-							
-							<label for="mail">Email address: </label>
-							<input type="email" id="mail" name="email">
+					</fieldset>
 
-						</fieldset>
-
-							<div class="buttons">
-								<button type="submit">Sign Up</button>
-							</div>	
-				</form>
-			</div>
-		</div>
+						<div class="buttons">
+							<button type="submit">Sign Up</button>
+						</div>
+			</form>
+		</article>
 	</div>
 	
 	<div class="map">
