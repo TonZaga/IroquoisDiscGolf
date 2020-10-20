@@ -12,36 +12,39 @@
 	<main></main>
     <header class="main-header">
 		<div class="header-container">
-			<div class="title">Iroquois Disc Golf</div>
-				<nav>
-					<div class="menu">
-						<ul class="item"><a href="index.html">Home</a></ul>
-						<ul class="item"><a href="./pages/course.html">Course</a></ul>
-						<ul class="item"><a href="./pages/score.html">Scoring</a></ul>
-						<ul class="item"><a href="./pages/events.html">Events</a></ul>
-					</div>
-				</nav>
+			<nav>
+				<div class="title">Iroquois Disc Golf</div>
+					<ul class="menu">
+						<li class="item"><a href="index.html">Home</a></li>
+						<li class="item"><a href="./pages/course.html">Course</a></li>
+						<!-- <li class="item"><a href="./pages/score.html">Scoring</a></li> -->
+						<li class="item"><a href="./pages/events.html">Events</a></li>
+					</ul>
+			</nav>
 				<img class="feat-img" src="./img/Basket.jpg" alt="Disc golf basket">
-			</div>
 		</div>
 	</header>  
 
 	<div class="main-content">
 		<article class="secondary col">
-			<h1>Welcome to our website!</h1>
-			<p>We are your one-stop shop for everything disc golf related that's happening at Iroquois Park Disc Golf Course in Louisville, KY.</p>
-			<p>You will find information about the course, leagues and tournaments being held in the area, directions to the course, and more!</p>
+			<h1>The unofficial Iroquois Disc Golf site</h1>
+				<p>We are your one-stop shop for everything disc golf related that's happening at Iroquois Park Disc Golf Course in Louisville, KY. and beyond!</p>
+				<p>You will find information about our course, disc golf news, a nifty scoring app, leagues/tournaments being held in the area, and more.</p>
 		</article>
 		
 		<article class="primary col">
-			<h1>LIVE scorecard is under construction</h1>
-			<p>Soon, you'll be able to use the scoring feature that's built into the site to track your strokes for each hole and know your total score.</p>
-			<p>You will find information about the course, leagues and tournaments being held in the area, directions to the course, and more!</p>
+			<h1>Disc Golf News</h1>
+				<h2>Congrats to Kevin Jones!!</h2>
+				<figcaption>written by: Anthony Branham - 10/18/2020</figcaption>
+					<p>It was a great week of DGPT Championship action that saw the field of 16 players, down to 1 man!  Kevin Jones held off the likes of Chris Dickerson, Austin Hannum, and Calvin Heimburg.  Chris Dickerson scored a bogey on the final hole to allow Kevin to avoid a playoff and seal the victory, with just a PAR.  Kevin finished with a -9 (55) final round and earned the $20,000 payday!</p>
+						<img src="img/KJthrow.jpg">
+							<figcaption>Kevin Jones throws an upshot during the DGPT Championship Final round.  Photo: Alyssa Van Lanen / DGPT</figcaption>
+				
 		</article>
 
 		<article class="tertiary col">
 			<h1>Sign-up for IQDG Newsletter</h1>
-				<form class="newsletter" action="index.html" method="POST">
+				<form name="newsletter" method="post">
 					<fieldset>
 						<label for="name1">First Name: </label>
 						<input type="text" id="name1" name="first_name"><br><br>
@@ -55,19 +58,19 @@
 					</fieldset>
 
 						<div class="buttons">
-							<button type="submit">Sign Up</button>
+							<button type="submit" id="submit">Sign Up</button>
 						</div>
 			</form>
 		</article>
 	</div>
 	
 	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.1846924144056!2d-85.78131358427083!3d38.15914697969127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869121d01b9cd17%3A0x80608ad6227899c2!2sFrisbee%20Way%2C%20Louisville%2C%20KY%2040214!5e0!3m2!1sen!2sus!4v1600728704298!5m2!1sen!2sus" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.1846924144056!2d-85.78131358427083!3d38.15914697969127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869121d01b9cd17%3A0x80608ad6227899c2!2sFrisbee%20Way%2C%20Louisville%2C%20KY%2040214!5e0!3m2!1sen!2sus!4v1600728704298!5m2!1sen!2sus" width="100%" height="400" frameborder="0" style="border:0;" allowflilscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
 
 	<footer class="main-footer">
 		<span>&copy;2020 Iroquois Disc Golf<br>
-		Website designed by Anthony Branham</span>
+			Website designed by Anthony Branham</span>
 	</footer>
 	<script src="script.js"></script>
 </body>

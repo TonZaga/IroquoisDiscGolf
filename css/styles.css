@@ -27,7 +27,7 @@ body {
 
 .title {
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: bold;
   background-color: forestgreen;
   color: white;
   text-align: center;
@@ -40,11 +40,14 @@ body {
   font-size: 14px;
 }
 
-.item a {
+.menu li a {
+  display: block;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: right;
   background-color: forestgreen;
   color: white;
+  padding: 10px;
 }
 
 .main-content {
@@ -61,7 +64,7 @@ h1 {
 }
 
 h2 {
-  margin: 40px 0 20px 0;
+  margin-bottom: 10px;
 }
 
 a {
@@ -72,8 +75,14 @@ img {
   max-width: 100%;
 }
 
+figcaption {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .main-footer {
   border-top: 10px solid forestgreen;
+  padding: 10px 0 10px 0;
   width: 100%;
   text-align: center;
 }
@@ -96,14 +105,15 @@ textarea {
 
 button {
   font-family: inherit;
-  font-size: 100%;
+  font-size: 1.5em;
   width: 100px;
-  height: 35px;
+  height: 100px;
   background-color: forestgreen;
   color: white;
   border: 2px solid black;
   text-align: center;
   margin-top: 10px;
+  border-radius: 50%;
 }
 
 .buttons {
@@ -120,6 +130,23 @@ button {
   text-align: center;
 }
 
+.course-details {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.course-details li,
+.events li {
+  margin-left: 20px;
+  padding: 5px;
+  list-style-type: disc;
+}
+
+.detail {
+  font-weight: normal;
+}
+
 /* ================================= 
   Flexbox layout
 ==================================== */
@@ -129,12 +156,16 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .item {
-  padding: 20px;
+  padding: 10px;
 }
+
+
+/* ================================= 
+  Hamburger menu
+==================================== */
 
 
 /* ================================= 
@@ -162,8 +193,6 @@ input[type="email"]:focus {
 
 @media (min-width: 769px) {
   
-  .main-header,
-  .menu,
   .main-content,
   .col,
   .directions,
@@ -171,10 +200,6 @@ input[type="email"]:focus {
   .gallery,
   .score {
     display: flex;
-  }
-  
-  .main-header {
-    flex-direction: column;
   }
 
   .main-content {
@@ -206,12 +231,6 @@ input[type="email"]:focus {
 
 @media (min-width: 1025px) {
 
-  .menu {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
   .col {
     flex-basis: 0;
   }
@@ -220,10 +239,9 @@ input[type="email"]:focus {
     flex-grow: 2;
   }
 
-  .item a:hover {
-    background-color: black;
-    color: yellow;
-    text-decoration: underline;
+  .menu li a:hover {
+    color: black;
+    border-bottom: 1px solid black;
   }
 
   .map {

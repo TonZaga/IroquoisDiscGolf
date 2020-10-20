@@ -1,27 +1,46 @@
-/* Newsletter validation */
+// /* ================================= 
+//   Newsletter form validation
+// ==================================== */
 
-function isFieldEmpty () {
-    if (document.form.question.value == "") {
-        alert("empty")
+const submit = document.getElementById('submit');
+
+const validate = (e) => {
+e.preventDefault();
+const first = document.getElementById('name1');
+const last = document.getElementById('name2')
+const emailAddress = document.getElementById('mail');
+
+const emailIsValid = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
-    if (!field.value) {
-        return true;
-    }
-        else {
-            return false;
-        }
+
+if (first.value === "") {
+    alert("Please enter your first name.");
+    name1.focus();
+    return false;
 }
 
-const results = isFieldEmpty();
-
-if (name1) {
-    alert('Please enter first name')
+if (last.value === "") {
+    alert("Please enter your last name.");
+    name2.focus();
+    return false;
 }
 
-if (name2) {
-    alert('Please enter last name')
+if (emailAddress.value === "") {
+    alert("Please enter your email address.");
+    mail.focus();
+    return false;
 }
 
-if (mail) {
-    alert('Please enter email address')
+if (!emailIsValid(emailAddress.value)) {
+    alert("Please enter a valid email address.");
+    emailAddress.focus();
+    return false;
 }
+alert("You've been added to the newsletter!");
+first.value="";
+last.value="";
+emailAddress.value="";
+}
+
+submit.addEventListener('click', validate);
