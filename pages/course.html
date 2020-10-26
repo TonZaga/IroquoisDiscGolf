@@ -6,47 +6,51 @@
 	<link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="../css/styles.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Iroquois Disc Golf - COURSE</title>
 </head>
 <body>
-
-    <header class="main-header">
-		<div class="header-container">
+	<main></main>
+		<header class="main-header">
 			<nav>
-				<div class="title">Iroquois Disc Golf</div>
-					<ul class="menu">
-						<li class="item"><a href="../index.html">Home</a></li>
-						<li class="item"><a href="course.html">Course</a></li>
-						<!-- <li class="item"><a href="score.html">Scoring</a></li> -->
-						<li class="item"><a href="events.html">Events</a></li>
-					</ul>
+				<a href="javascript:void(0);" class="icon" onclick="toggle()">
+					<i class="fa fa-bars"></i>
+				</a>
+				<div class="title">IQDG Course Layout</div>
+				<div id="menu" class="active">
+					<a href="../index.html">Home</a>
+					<a href="course.html">Course</a>
+					<a href="events.html">Events</a>
+					<!-- <a href="./pages/score.html">Scoring</a> -->
+				</div>
 			</nav>
-				<img class="feat-img" src="../img/layout.png" alt="Disc golf basket">
-		</div>
-	</header>  
+					<img class="feat-img" src="../img/layout.png" alt="Disc golf basket">
+			</div>
+		</header>  
 
-	<div class="breakdown">
-		<div class="holes">
-			<h1>Course details</h1>
-			<ul class="course-details">
-				<li>Course type: <span class="detail">Permanent</span></li>
-				<li>Total # of holes: <span class="detail">18</span></li>
-				<li>Basket type: <span class="detail">Mach III</span></li>
-				<li>Tee Type: <span class="detail">Concrete</span></li>
-				<li>Elevation: <span class="detail">Some low hills</span></li>
-				<li>Foliage: <span class="detail">Stands</span></li>
-				<li>Course length: <span class="detail">Permanent</span></li>
-				<li>Alternate length: <span class="detail">Permanent</span></li>
-				<li>Hole length - Under 300ft: <span class="detail">15</span></li>
-				<li>Hole length - 300-400ft: <span class="detail">3</span></li>
-				<li>Hole length - Over 400ft: <span class="detail">0</span></li>
-			</ul>
+		<div class="breakdown">
+			<div class="holes">
+				<h1>Course details</h1>
+				<ul class="course-details">
+					<li>Course type: <span class="detail">Permanent</span></li>
+					<li>Total # of holes: <span class="detail">18</span></li>
+					<li>Basket type: <span class="detail">Mach III</span></li>
+					<li>Tee Type: <span class="detail">Concrete</span></li>
+					<li>Elevation: <span class="detail">Some low hills</span></li>
+					<li>Foliage: <span class="detail">Stands</span></li>
+					<li>Course length: <span class="detail">Permanent</span></li>
+					<li>Alternate length: <span class="detail">Permanent</span></li>
+					<li>Hole length - Under 300ft: <span class="detail">15</span></li>
+					<li>Hole length - 300-400ft: <span class="detail">3</span></li>
+					<li>Hole length - Over 400ft: <span class="detail">0</span></li>
+				</ul>
+			</div>
 		</div>
-	</div>
 
-	<footer class="main-footer">
-		<span>&copy;2020 Iroquois Disc Golf<br>
-		Website designed by Anthony Branham</span>
-	</footer>
+		<footer class="main-footer">
+			<span>&copy;2020 Iroquois Disc Golf<br>
+			Website designed by Anthony Branham</span>
+		</footer>
+		<script src="../script.js"></script>
 </body>
 </html>

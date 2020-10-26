@@ -6,22 +6,26 @@
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="../css/styles.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Iroquois Disc Golf - SCORE</title>
 </head>
 <body>
-
+	<main></main>
     <header class="main-header">
-		<div class="header-container">
 			<nav>
-				<div class="title">Iroquois Disc Golf</div>
-					<ul class="menu">						
-						<li class="item"><a href="../index.html">Home</a></li>
-						<li class="item"><a href="course.html">Course</a></li>
-						<li class="item"><a href="score.html">Scoring</a></li>
-						<li class="item"><a href="events.html">Events</a></li>
-					</ul>
+				<a href="javascript:void(0);" class="icon" onclick="toggle()">
+					<i class="fa fa-bars"></i>
+				</a>
+				<div class="title">IQDG Scoring</div>
+				<div id="menu" class="active">
+					<a href="../index.html">Home</a>
+					<a href="course.html">Course</a>
+					<a href="events.html">Events</a>
+					<!-- <a href="score.html">Scoring</a> -->
+				</div>
 			</nav>
-		</div>
+					<img class="feat-img" src="../img/Basket.jpg" alt="Disc golf basket">
+			</div>
 	</header>  
 
     <div class="score">
@@ -41,6 +45,6 @@
 		<span>&copy;2020 Iroquois Disc Golf<br>
 		Website designed by Anthony Branham</span>
 	</footer>
-    <script src="/script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

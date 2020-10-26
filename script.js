@@ -15,32 +15,46 @@ const emailIsValid = email => {
     }
 
 if (first.value === "") {
-    alert("Please enter your first name.");
+    alert("WARNING!!!\n\nPlease enter your first name.");
     name1.focus();
     return false;
 }
 
 if (last.value === "") {
-    alert("Please enter your last name.");
+    alert("WARNING!!!\n\nPlease enter your last name.");
     name2.focus();
     return false;
 }
 
 if (emailAddress.value === "") {
-    alert("Please enter your email address.");
+    alert("WARNING!!!\n\nPlease enter your email address.");
     mail.focus();
     return false;
 }
 
 if (!emailIsValid(emailAddress.value)) {
-    alert("Please enter a valid email address.");
+    alert("WARNING!!!\n\nPlease enter a valid email address.");
     emailAddress.focus();
     return false;
 }
-alert("You've been added to the newsletter!");
+alert(`${name1.value}, you've been added to our monthly newsletter!`);
 first.value="";
 last.value="";
 emailAddress.value="";
 }
 
 submit.addEventListener('click', validate);
+
+
+// /* ================================= 
+//   Hamburger menu toggle
+// ==================================== */
+
+function toggle() {
+    const x = document.getElementById("menu");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  } 
