@@ -2,7 +2,7 @@
 //   Newsletter form validation
 // ==================================== */
 
-const submit = document.getElementById('submit');
+const valid = document.getElementById('validation');
 
 const validate = (e) => {
 e.preventDefault();
@@ -43,7 +43,9 @@ last.value="";
 emailAddress.value="";
 }
 
-submit.addEventListener('click', validate);
+if (valid) {
+valid.addEventListener('click', validate);
+}
 
 
 // /* ================================= 
@@ -58,3 +60,15 @@ function toggle() {
       x.style.display = "flex";
     }
   } 
+
+// /* ================================= 
+//   Scoring calculator
+// ==================================== */
+
+const par = 58;
+var score = [];
+
+function getScore() {
+    for(i = 0; i < 18; i++) {
+        
+}

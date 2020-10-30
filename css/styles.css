@@ -148,6 +148,14 @@ button {
   font-weight: normal;
 }
 
+input[type="number"] {
+  background-color: forestgreen;
+  color: white;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+
 /* ================================= 
   Flexbox layout
 ==================================== */
@@ -157,6 +165,26 @@ button {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+}
+
+.scoring {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 30px;
+}
+
+.scoring label {
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.scoring button {
+  font-size: 1em;
+  margin-bottom: 20px
 }
 
 /* ================================= 
@@ -183,14 +211,14 @@ nav a {
 
 nav a.icon {
   background: forestgreen none repeat scroll 0% 0%;
-  border-radius: 100%;
+  border-radius: 50%;
   box-shadow: 0 0 10px 0px black;
   color: white;
   opacity: 75%;
-  font-size: 30px;
+  font-size: 40px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   z-index: 99999;
 }
 
@@ -222,7 +250,6 @@ input[type="email"]:focus {
   color: white;
   border: solid 2px;
 }
-
 
 /* ================================= 
   Media Queries

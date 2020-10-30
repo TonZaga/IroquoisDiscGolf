@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="../css/styles.css" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Iroquois Disc Golf - SCORE</title>
+    <title>IQDG - Score</title>
 </head>
 <body>
 	<main></main>
@@ -21,26 +21,41 @@
 					<a href="../index.html">Home</a>
 					<a href="course.html">Course</a>
 					<a href="events.html">Events</a>
-					<!-- <a href="score.html">Scoring</a> -->
+					<a href="score.html">Scoring</a>
 				</div>
 			</nav>
 					<img class="feat-img" src="../img/Basket.jpg" alt="Disc golf basket">
 			</div>
 	</header>  
 
-    <div class="score">
-		<div class="long_score col">
-			<h2>Long tees</h2>
-                <p>TABLE: Hole/Distance PLACEHOLDER</p>
-        </div>
-        
-        <div class="short_score col">
-			<h2>Short tees</h2>
-                <p>TABLE: Hole/Distance PLACEHOLDER</p>
-        </div>
-    
-    </div>
+			<h1>Course is at Championship layout (October 2020)<br><br>PAR: 58</h1>
+		
+		<div class="score"></div>
 	
+		<form action="" id="score" onsubmit="return false;">
+			<div class="scoring">
+				<label for="hole1">#1 / Par 3: <input type="number" id="hole1" name="hole1" onchange="getScore()"></label>
+				<label for="hole2">#2 / Par 3: <input type="number" id="hole2" name="hole2" onchange="getScore()"></label>
+				<label for="hole3">#3 / Par 3: <input type="number" id="hole3" name="hole3" onchange="getScore()"></label>
+				<label for="hole4">#4 / Par 3: <input type="number" id="hole4" name="hole4" onchange="getScore()"></label>
+				<label for="hole5">#5 / Par 3: <input type="number" id="hole5" name="hole5" onchange="getScore()"></label>
+				<label for="hole6">#6 / Par 3: <input type="number" id="hole6" name="hole6" onchange="getScore()"></label>
+				<label for="hole7">#7 / Par 3: <input type="number" id="hole7" name="hole7" onchange="getScore()"></label>
+				<label for="hole8">#8 / Par 3: <input type="number" id="hole8" name="hole8" onchange="getScore()"></label>
+				<label for="hole9">#9 / Par 5: <input type="number" id="hole9" name="hole9" onchange="getScore()"></label>
+				<label for="hole10">#10 / Par 3: <input type="number" id="hole10" name="hole10" onchange="getScore()"></label>
+				<label for="hole11">#11 / Par 3: <input type="number" id="hole11" name="hole11" onchange="getScore()"></label>
+				<label for="hole12">#12 / Par 3: <input type="number" id="hole12" name="hole12" onchange="getScore()"></label>
+				<label for="hole13">#13 / Par 3: <input type="number" id="hole13" name="hole13" onchange="getScore()"></label>
+				<label for="hole14">#14 / Par 3: <input type="number" id="hole14" name="hole14" onchange="getScore()"></label>
+				<label for="hole15">#15 / Par 3: <input type="number" id="hole15" name="hole15" onchange="getScore()"></label>
+				<label for="hole16">#16 / Par 3: <input type="number" id="hole16" name="hole16" onchange="getScore()"></label>
+				<label for="hole17">#17 / Par 4: <input type="number" id="hole17" name="hole17" onchange="getScore()"></label>
+				<label for="hole18">#18 / Par 4: <input type="number" id="hole18" name="hole18" onchange="getScore()"></label>
+			</div>
+		</form>
+
+
 	<footer class="main-footer">
 		<span>&copy;2020 Iroquois Disc Golf<br>
 		Website designed by Anthony Branham</span>
