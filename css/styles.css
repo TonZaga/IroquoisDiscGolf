@@ -61,6 +61,20 @@ p {
 
 h1 {
   font-size: 2em;
+  margin-top: 0px;
+}
+
+.score-header {
+  margin: 2px;
+  text-align: center;
+}
+
+#score-wrapper{
+ position: sticky;
+ position: -webkit-sticky;
+ top: 0;
+ background-color: silver;
+ padding: 0;
 }
 
 h2,
@@ -73,7 +87,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 figcaption {
@@ -88,8 +102,7 @@ figcaption {
   text-align: center;
 }
 
-.col,
-.holes {
+.col {
   padding: 10px;
 }
 
@@ -134,7 +147,7 @@ button {
 .course-details {
   font-weight: bold;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .course-details li,
@@ -153,6 +166,11 @@ input[type="number"] {
   color: white;
   width: 100px;
   margin-bottom: 20px;
+}
+
+.scoreField{
+  display: inline;
+  margin-left: 20px;
 }
 
 

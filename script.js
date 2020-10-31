@@ -65,10 +65,41 @@ function toggle() {
 //   Scoring calculator
 // ==================================== */
 
-const par = 58;
-var score = [];
+let par = [
+    3, 3, 3, 3, 3, 3, 3, 3, 5, 3, 3, 3, 3, 3, 3, 3, 4, 4
+];
+let totalPAR = document.getElementById("totalPAR");
+totalPAR.innerHTML += par.reduce((a, b) => a + b, 0);
+// log(`${totalPAR}`);
+
+
 
 function getScore() {
-    for(i = 0; i < 18; i++) {
-        
+    let holes = document.getElementsByClassName("value");
+    let totalScore = 0;
+    for (i = 0; i < holes.length; i++) {
+        totalScore += parseInt(holes[i].value)
+    }
+
+    //Changes value color if your score is higher than PAR
+    let yourTotal = document.getElementById("yourTotal");
+    if (totalScore > totalPAR.innerText){
+        yourScore.style.color = "red";
+    } else if (totalScore == totalPAR.innerText){
+        yourScore.style.color = "black";
+    } else {
+        yourScore.style.color = "green";
+    }
+
+    
+    //Makes score visible in UI
+    yourTotal.innerHTML = totalScore;
+    let totalSum = totalScore - totalPAR.innerText
+
+    if (totalSum > 0){
+        yourScore.innerHTML = "(+" + totalSum + ")"
+    } else {
+        yourScore.innerHTML = "(" + totalSum + ")"
+    }
 }
+
